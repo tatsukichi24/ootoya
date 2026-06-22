@@ -15,6 +15,7 @@
   --font-size-44: 3rem;
   --site-padding: clamp(2rem, 4vw, 4rem);
   --content-width: 70rem;
+  --page-max-width: 1280px;
 }
 
 *,
@@ -33,6 +34,9 @@ body {
   font-family: var(--font-sans);
   font-size: var(--font-size-16);
   line-height: 2;
+  line-break: strict;
+  word-break: normal;
+  overflow-wrap: break-word;
   background: var(--color-base);
 }
 
@@ -62,6 +66,10 @@ a {
   display: block;
 }
 
+.text-keep {
+  display: inline-block;
+}
+
 @media not all and (min-width: 568px){
   .newline {
     display: inline-block;
@@ -81,6 +89,14 @@ a {
   align-items: flex-start;
   justify-content: space-between;
   width: 100%;
+}
+
+@media (min-width: 768px){
+  main,
+  .site-header__inner {
+    max-width: var(--page-max-width);
+    margin-inline: auto;
+  }
 }
 
 .site-header__logo {
@@ -239,7 +255,7 @@ a {
 
 .mv__person--03 {
   --person-layer: 3;
-  --person-width: 21%;
+  --person-width: 22%;
   --person-top: 17%;
   --person-left: 20%;
   --person-delay: .5s;
@@ -257,8 +273,8 @@ a {
 
 .mv__person--02 {
   --person-layer: 2;
-  --person-width: 21%;
-  --person-top: 11%;
+  --person-width: 20%;
+  --person-top: 14%;
   --person-left: 46%;
   --person-delay: .94s;
   --person-rotate: 0deg;
@@ -267,9 +283,9 @@ a {
 
 .mv__person--01 {
   --person-layer: 1;
-  --person-width: 23%;
-  --person-top: 8%;
-  --person-left: 31%;
+  --person-width: 21%;
+  --person-top: 10%;
+  --person-left: 32%;
   --person-delay: 1.16s;
   --person-rotate: 0deg;
   clip-path: inset(0 0 3% 0);
@@ -297,15 +313,15 @@ a {
   }
 
   .mv__person--02 {
-    --person-width: 36%;
-    --person-top: 25%;
+    --person-width: 33%;
+    --person-top: 27%;
     --person-left: 45%;
   }
 
   .mv__person--01 {
-    --person-width: 39%;
-    --person-top: 22%;
-    --person-left: 21%;
+    --person-width: 35%;
+    --person-top: 26%;
+    --person-left: 23%;
   }
 }
 
@@ -759,7 +775,7 @@ a {
   display: inline-block;
   margin: 0 0 2rem;
   color: #5b4d55;
-  font-family: "DNP Shuei Mgothic Std", dnp-shuei-mgothic-std, var(--font-sans);
+  font-family: "M PLUS Rounded 1c", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   white-space: nowrap;
@@ -786,10 +802,12 @@ a {
 .content-section__title {
   margin: 0 0 1rem;
   color: #5b4d55;
-  font-family: "DNP Shuei Anti Std", dnp-shuei-anti-std, var(--font-sans);
+  font-family: "Zen Antique", serif;
   font-size: 2rem;
   line-height: 1;
   font-weight: 800;
+  word-break: keep-all;
+  overflow-wrap: normal;
 }
 
 .content-section__body {
@@ -798,6 +816,7 @@ a {
   line-height: 2;
   font-weight: 400;
   letter-spacing: 0;
+  line-break: strict;
 }
 
 .content-section__note {
@@ -831,7 +850,7 @@ a {
   margin-left: 9rem;
 }
 
-@media not all and (min-width: 940px){
+@media not all and (min-width: 1024px){
   .content-section__visual--thanks {
     margin-inline: auto;
     width: min(100%, 28rem)!important;
@@ -935,7 +954,7 @@ a {
   width: 13rem;
 }
 
-@media not all and (min-width: 941px){
+@media not all and (min-width: 1024px){
   .content-section {
     padding: 4rem var(--site-padding);
   }
@@ -999,7 +1018,7 @@ a {
   }
 }
 
-@media not all and (min-width: 940px){
+@media not all and (min-width: 1024px){
   .content-section__visual--smile {
     --visual-min-height: 0;
     aspect-ratio: 1 / .95;
@@ -1069,7 +1088,7 @@ a {
 
 @media not all and (min-width: 768px){
   .content-section {
-    padding: 4rem var(--site-padding);
+    padding: 4rem 20px;
   }
 
   .content-section--smile,
@@ -1348,6 +1367,8 @@ a {
   letter-spacing: 0em;
   text-align: center;
   color: #241b1b;
+  word-break: keep-all;
+  overflow-wrap: normal;
 }
 
 .voices__title::before,
@@ -1506,6 +1527,7 @@ a {
   line-height: 2;
   text-align: left;
   color: var(--color-text);
+  line-break: strict;
 }
 
 .voices__dots {
@@ -1557,6 +1579,8 @@ a {
   font-weight: 600;
   letter-spacing: 0em;
   text-align: center;
+  word-break: keep-all;
+  overflow-wrap: normal;
 }
 
 @media not all and (min-width: 768px){
@@ -1578,6 +1602,8 @@ a {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0em;
+  word-break: keep-all;
+  overflow-wrap: normal;
 }
 
 .shop__recruit-line {
@@ -1614,7 +1640,10 @@ a {
 
 @media not all and (min-width: 768px){
   .shop-card {
-    padding: 20px;
+    position: relative;
+    display: block;
+    min-height: 122px;
+    padding: 18px 20px;
   }
 }
 
@@ -1628,6 +1657,8 @@ a {
   font-size: 12px;
   font-weight: 700;
   line-height: 2;
+  word-break: keep-all;
+  overflow-wrap: normal;
 }
 
 .shop-card__name {
@@ -1637,6 +1668,14 @@ a {
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
+  word-break: keep-all;
+  overflow-wrap: normal;
+}
+
+@media not all and (min-width: 768px){
+  .shop-card__name {
+    padding-right: 112px;
+  }
 }
 
 .shop-card__chief {
@@ -1645,6 +1684,15 @@ a {
   font-size: 12px;
   font-weight: 700;
   line-height: 2;
+  line-break: strict;
+}
+
+@media not all and (min-width: 768px){
+  .shop-card__chief {
+    font-size: 11px;
+    line-height: 2.1;
+    white-space: nowrap;
+  }
 }
 
 .shop-card__link {
@@ -1660,6 +1708,7 @@ a {
   font-size: 10px;
   text-decoration: none;
   transition: opacity .2s ease;
+  white-space: nowrap;
 }
 
 .shop-card__link::after {
@@ -1706,6 +1755,8 @@ a {
   font-size: 20px;
   font-weight: 800;
   letter-spacing: 0em;
+  word-break: keep-all;
+  overflow-wrap: normal;
 }
 
 .shop__expand-title::before,
@@ -2097,6 +2148,63 @@ a {
 
   .lp-footer__sitemap-inner {
     gap: 28px 70px;
+  }
+}
+
+@media not all and (min-width: 768px){
+  .shop-card__link {
+    position: absolute;
+    top: 51px;
+    right: 20px;
+    gap: .5rem;
+    padding-inline: 16px;
+  }
+}
+
+@media not all and (min-width: 360px){
+  .shop-card {
+    padding-inline: 16px;
+  }
+
+  .shop-card__chief {
+    font-size: 10px;
+  }
+
+  .shop-card__link {
+    right: 16px;
+    padding-inline: 12px;
+  }
+}
+
+@media not all and (min-width: 468px){
+  .shop-card {
+    display: flex;
+    min-height: 0;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .shop-card__body {
+    width: 100%;
+  }
+
+  .shop-card__name {
+    padding-right: 0;
+    line-height: 1.15;
+  }
+
+  .shop-card__chief {
+    white-space: normal;
+    line-height: 1.6;
+  }
+
+  .shop-card__link {
+    position: static;
+    margin-top: 2px;
+    width: 100%;
   }
 }
 
