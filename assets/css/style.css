@@ -2290,3 +2290,10 @@ a {
     gap: 20px;
   }
 }
+
+
+@media not all and (min-width: 768px){
+  .content-section__visual--thanks {
+    margin-left: 0;
+  }
+}
