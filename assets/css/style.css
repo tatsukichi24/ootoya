@@ -2292,8 +2292,34 @@ a {
 }
 
 
-@media not all and (min-width: 768px){
+@media not all and (min-width: 768px) {
   .content-section__visual--thanks {
     margin-left: 0;
   }
+
+  .site-header {
+    padding: 1rem;
+  }
+
+  .site-header__inner {
+    width: auto;
+  }
+
+  .content-section__title,
+  .content-section__body,
+  .shop__badge-text,
+  .voices__title {
+    word-break: normal;
+    overflow-wrap: anywhere;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  overflow-x: hidden;
 }
