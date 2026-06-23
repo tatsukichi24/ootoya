@@ -112,7 +112,7 @@ a {
 
 .site-header__button {
   width: 12rem;
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 @media not all and (min-width: 768px){
