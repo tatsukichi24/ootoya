@@ -1990,7 +1990,7 @@ a {
 }
 
 .lp-footer__brand-card img {
-  width: 82px;
+  width: clamp(82px, 10vw, 120px);
   height: auto;
 }
 
@@ -2259,6 +2259,8 @@ a {
     justify-self: center;
   }
 
+  
+
   .lp-footer__nav ul {
     grid-template-columns: 1fr;
     grid-template-rows: none;
@@ -2322,4 +2324,10 @@ body {
 
 main {
   overflow-x: hidden;
+}
+
+@media (min-width: 768px) {
+  .site-header__inner {
+    padding-inline: 2rem;
+  }
 }
