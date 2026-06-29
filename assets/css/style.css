@@ -2346,7 +2346,7 @@ main {
   block-size: 64px;
   padding-block-start: 12px;
   font-family: 'Zen Antique Soft', serif;
-  font-size: 1.6rem;
+  font-size: 16px;
   color: #fff;
   text-align: center;
   cursor: pointer;
@@ -2362,7 +2362,7 @@ main {
     inset-inline-end: 0;
     inline-size: 48px;
     block-size: 48px;
-    font-size: 1.2rem;
+    font-size: 12px;
     background: #171e4e url(../images/css/icon-arrow-pagetop.svg) center 6px no-repeat;
     background-size: 16px auto;
     border-block-start: 1px solid #fff;
@@ -2461,8 +2461,8 @@ main {
 
 @media screen and (max-width: 991px) {
   .c-nav-sitemap__logo {
-    inline-size: 120px;
-    block-size: 101px;
+    inline-size: auto;
+    block-size: 130px;
   }
 }
 
@@ -2519,7 +2519,7 @@ main {
   position: relative;
   display: inline-block;
   padding-block-start: 2px;
-  font-size: 1.4rem;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
   text-decoration: none;
@@ -2545,7 +2545,7 @@ main {
 }
 
 .c-nav-sitemap__menu ul li a span {
-  font-size: 1.4rem;
+  font-size: 14px;
   line-height: 1.5;
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -2615,7 +2615,7 @@ main {
 
 @media screen and (max-width: 991px) {
   .c-nav-sitemap__bottom-inner {
-    inline-size: inherit;
+    inline-size: 100%;
   }
 }
 
@@ -2638,6 +2638,7 @@ main {
 }
 
 .c-nav-sitemap__social {
+  display: block;
   position: relative;
   inline-size: 100%;
   margin-block-start: 16px;
@@ -2651,9 +2652,16 @@ main {
 
 .c-nav-sitemap__social-list {
   display: flex;
-  gap: 16px;
+  align-items: center;
   justify-content: center;
+  gap: 16px;
+  margin: 16px 0 0;
+  padding: 0;
   list-style: none;
+}
+
+.c-nav-sitemap__social-list li,
+.c-nav-sitemap__social-list figure {
   margin: 0;
   padding: 0;
 }
@@ -2668,8 +2676,13 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  inline-size: 32px;
-  block-size: 32px;
+}
+
+.c-nav-sitemap__social-list img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 32px;
 }
 
 @media (hover) {
@@ -2761,7 +2774,7 @@ main {
 }
 
 .c-footer__links a span {
-  font-size: 1.2rem;
+  font-size: 12px;
   line-height: 1.5;
   color: #fff;
   text-decoration: underline;
@@ -2770,7 +2783,7 @@ main {
 
 @media screen and (max-width: 991px) {
   .c-footer__links a span {
-    font-size: 1rem;
+    font-size: 10px;
   }
 }
 
@@ -2791,7 +2804,7 @@ main {
 
 .c-footer__copyright {
   font-family: 'Zen Antique Soft', serif;
-  font-size: 1.2rem;
+  font-size: 12px;
   line-height: 1.2;
   color: #fff;
   text-align: center;
@@ -2800,7 +2813,7 @@ main {
 @media screen and (max-width: 991px) {
   .c-footer__copyright {
     inline-size: 100%;
-    font-size: 1rem;
+    font-size: 10px;
   }
 }
 
@@ -2886,7 +2899,7 @@ main {
 
 .c-nav-menu-sp__menu {
   min-inline-size: 92px;
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 
 .c-nav-menu-sp__menu:before {
@@ -2900,7 +2913,7 @@ main {
 
 .c-nav-menu-sp__marker {
   min-inline-size: 92px;
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 
 .c-nav-menu-sp__marker:before {
@@ -2914,7 +2927,7 @@ main {
 
 .c-nav-menu-sp__order {
   min-inline-size: 102px;
-  font-size: 1rem;
+  font-size: 10px;
 }
 
 .c-nav-menu-sp__order:before {
@@ -2942,7 +2955,7 @@ main {
   max-inline-size: 480px;
   min-block-size: 44px;
   font-family: 'Zen Antique Soft', serif;
-  font-size: 1.4rem;
+  font-size: 14px;
   line-height: 1.3;
   text-align: center;
   cursor: pointer;
@@ -3013,7 +3026,7 @@ main {
   max-inline-size: 480px;
   min-block-size: 44px;
   font-family: 'Zen Antique Soft', serif;
-  font-size: 1.4rem;
+  font-size: 14px;
   line-height: 1.3;
   text-align: center;
   cursor: pointer;
