@@ -2331,3 +2331,757 @@ main {
     padding-inline: 2rem;
   }
 }
+
+/* =============================================
+   OOTOYA Template Footer Styles
+   ============================================= */
+
+/* Page Top Button */
+.c-btn-pagetop-01 {
+  position: fixed;
+  inset-block-end: 32px;
+  inset-inline-end: 40px;
+  z-index: 8;
+  inline-size: 64px;
+  block-size: 64px;
+  padding-block-start: 12px;
+  font-family: 'Zen Antique Soft', serif;
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background: #171e4e url(../images/css/icon-arrow-pagetop.svg) center 5px no-repeat;
+  border-radius: 50%;
+  border: none;
+  transition: opacity .3s ease-out;
+}
+
+@media screen and (max-width: 991px) {
+  .c-btn-pagetop-01 {
+    inset-block-end: 56px;
+    inset-inline-end: 0;
+    inline-size: 48px;
+    block-size: 48px;
+    font-size: 1.2rem;
+    background: #171e4e url(../images/css/icon-arrow-pagetop.svg) center 6px no-repeat;
+    background-size: 16px auto;
+    border-block-start: 1px solid #fff;
+    border-inline-start: 1px solid #fff;
+    border-radius: 4px 0 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .c-btn-pagetop-01[data-is-stop=true] {
+    position: absolute;
+  }
+}
+
+@media (hover) {
+  .c-btn-pagetop-01:hover {
+    background: #57658f url(../images/css/icon-arrow-pagetop.svg) center 5px no-repeat;
+  }
+}
+
+/* Sitemap Navigation */
+.c-nav-sitemap {
+  background-color: #fff;
+}
+
+.c-nav-sitemap__body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 72px;
+  justify-content: center;
+  max-inline-size: 1160px;
+  padding-block: 56px;
+  padding-inline: 30px;
+  margin: 0 auto;
+}
+
+@media screen and (width >= 992px) and (width <= 1350px) {
+  .c-nav-sitemap__body {
+    display: grid;
+    row-gap: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .c-nav-sitemap__body {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    padding-block: 40px 72px;
+    padding-inline: 16px;
+  }
+}
+
+.c-nav-sitemap__top {
+  inline-size: 266px;
+  border-inline-end: 1px solid #ececec;
+}
+
+@media screen and (max-width: 991px) {
+  .c-nav-sitemap__top {
+    inline-size: 100%;
+    border-inline-end: 0;
+  }
+}
+
+.c-nav-sitemap__top-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  max-inline-size: 202px;
+}
+
+@media screen and (max-width: 991px) {
+  .c-nav-sitemap__top-inner {
+    gap: 16px;
+    max-inline-size: 100%;
+  }
+}
+
+.c-nav-sitemap__logo {
+  display: flex;
+  justify-content: center;
+  block-size: 117px;
+}
+
+@media (hover) {
+  .c-nav-sitemap__logo {
+    opacity: 1;
+    transition: opacity .3s ease-out;
+  }
+  .c-nav-sitemap__logo:hover {
+    opacity: .7;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .c-nav-sitemap__logo {
+    inline-size: 120px;
+    block-size: 101px;
+  }
+}
+
+.c-nav-sitemap__logo img {
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.c-nav-sitemap__menu {
+  position: relative;
+  inline-size: 100%;
+  max-inline-size: 412px;
+  padding-block-start: 8px;
+  border-inline-end: 1px solid #ececec;
+}
+
+@media screen and (width >= 992px) and (width <= 1350px) {
+  .c-nav-sitemap__menu {
+    grid-row: 1/2;
+    grid-column: 2;
+    inline-size: 402px;
+    border-inline-end: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .c-nav-sitemap__menu {
+    display: none;
+  }
+}
+
+.c-nav-sitemap__menu ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 0;
+  max-inline-size: 360px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (width >= 992px) and (width <= 1350px) {
+  .c-nav-sitemap__menu ul {
+    max-inline-size: 402px;
+  }
+}
+
+.c-nav-sitemap__menu ul li {
+  min-block-size: 24px;
+  line-height: 0;
+}
+
+.c-nav-sitemap__menu ul li a {
+  position: relative;
+  display: inline-block;
+  padding-block-start: 2px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (hover) {
+  .c-nav-sitemap__menu ul li a,
+  .c-nav-sitemap__menu ul li a span {
+    transition: color .3s ease-out;
+  }
+  .c-nav-sitemap__menu ul li a:after {
+    transition: background-image .3s;
+  }
+  .c-nav-sitemap__menu ul li a:hover,
+  .c-nav-sitemap__menu ul li a:hover span {
+    color: #57658f;
+    text-decoration: none;
+  }
+  .c-nav-sitemap__menu ul li a:hover[target=_blank]:after {
+    background-image: url(../images/css/icon-external-hover-01.svg);
+  }
+}
+
+.c-nav-sitemap__menu ul li a span {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.c-nav-sitemap__menu ul li a[target=_blank]:before {
+  font-size: 0;
+  letter-spacing: 0;
+  content: "新規タブで開きます";
+}
+
+.c-nav-sitemap__menu ul li a[target=_blank]:after {
+  display: inline-block;
+  inline-size: 16px;
+  block-size: 16px;
+  margin-inline-start: 6px;
+  content: "";
+  background: url(../images/css/icon-external-01.svg) 50%/16px 16px no-repeat;
+}
+
+@media screen and (max-width: 991px) {
+  .c-nav-sitemap__menu ul li a[target=_blank]:after {
+    transform: translateY(4px);
+  }
+}
+
+.c-nav-sitemap__bottom {
+  display: flex;
+  justify-content: flex-end;
+  inline-size: 100%;
+  max-inline-size: 278px;
+  padding: 8px 24px;
+}
+
+@media screen and (width >= 992px) and (width <= 1350px) {
+  .c-nav-sitemap__bottom {
+    justify-content: flex-start;
+    inline-size: 266px;
+    max-inline-size: inherit;
+    padding: 16px 0 0;
+    border-inline-end: 1px solid #ececec;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .c-nav-sitemap__bottom {
+    justify-content: center;
+    inline-size: 100%;
+    min-inline-size: 200px;
+    max-inline-size: inherit;
+    padding: 0;
+  }
+}
+
+.c-nav-sitemap__bottom-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  inline-size: 100%;
+}
+
+@media screen and (width >= 992px) and (width <= 1350px) {
+  .c-nav-sitemap__bottom-inner {
+    max-inline-size: 202px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .c-nav-sitemap__bottom-inner {
+    inline-size: inherit;
+  }
+}
+
+.c-nav-sitemap__bottom-button {
+  display: flex;
+  gap: 16px 24px;
+}
+
+@media screen and (width <= 1350px) {
+  .c-nav-sitemap__bottom-button {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .c-nav-sitemap__bottom-button {
+    inline-size: 100%;
+  }
+}
+
+.c-nav-sitemap__social {
+  position: relative;
+  inline-size: 100%;
+  margin-block-start: 16px;
+}
+
+@media screen and (max-width: 991px) {
+  .c-nav-sitemap__social {
+    margin-block-start: 24px;
+  }
+}
+
+.c-nav-sitemap__social-list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .c-nav-sitemap__social-list {
+    gap: 24px;
+  }
+}
+
+.c-nav-sitemap__social-list a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 32px;
+  block-size: 32px;
+}
+
+@media (hover) {
+  .c-nav-sitemap__social-list a {
+    opacity: 1;
+    transition: opacity .3s ease-out;
+  }
+  .c-nav-sitemap__social-list a:hover {
+    opacity: .7;
+  }
+}
+
+/* Footer */
+.c-footer {
+  padding-block: 24px;
+  background: url(../images/footer/bg-hero-01.png) 0% 0%/contain repeat;
+}
+
+@media screen and (max-width: 991px) {
+  .c-footer {
+    padding-block-end: 40px;
+  }
+}
+
+.c-footer__body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+  max-inline-size: 1160px;
+  padding-inline: 30px;
+  margin: 0 auto;
+}
+
+@media screen and (width >= 992px) and (width <= 1350px) {
+  .c-footer__body {
+    gap: 16px 24px;
+    justify-content: center;
+    max-inline-size: 800px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .c-footer__body {
+    padding-inline: 16px;
+  }
+}
+
+.c-footer:where(:not(:has(.c-footer__links))) :where(.c-footer__body) {
+  justify-content: end;
+}
+
+@media screen and (max-width: 991px) {
+  .c-footer__links {
+    inline-size: 100%;
+  }
+}
+
+.c-footer__links ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  justify-content: center;
+  line-height: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 991px) {
+  .c-footer__links ul {
+    align-items: center;
+    padding: 0 30px;
+  }
+}
+
+.c-footer__links a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (hover) {
+  .c-footer__links a:hover,
+  .c-footer__links a:hover span {
+    text-decoration: none;
+  }
+}
+
+.c-footer__links a span {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media screen and (max-width: 991px) {
+  .c-footer__links a span {
+    font-size: 1rem;
+  }
+}
+
+.c-footer__links a[target=_blank]:before {
+  font-size: 0;
+  letter-spacing: 0;
+  content: "新規タブで開きます";
+}
+
+.c-footer__links a[target=_blank]:after {
+  display: inline-block;
+  inline-size: 12px;
+  block-size: 14px;
+  margin-inline: 5px 2px;
+  content: "";
+  background: url(../images/css/icon-external-white-02.svg) 0 3px/contain no-repeat;
+}
+
+.c-footer__copyright {
+  font-family: 'Zen Antique Soft', serif;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .c-footer__copyright {
+    inline-size: 100%;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile Menu */
+.c-nav-menu-sp {
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  .c-nav-menu-sp {
+    display: block;
+    block-size: 56px;
+  }
+}
+
+.c-nav-menu-sp__inner {
+  position: fixed;
+  inset-block-end: 0;
+  inset-inline-start: 0;
+  z-index: 8;
+  display: flex;
+  justify-content: center;
+  inline-size: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px #aea9a140;
+}
+
+.c-nav-menu-sp nav {
+  display: flex;
+  align-items: center;
+  inline-size: 100%;
+  max-inline-size: 375px;
+  block-size: 56px;
+  padding: 8px 16px;
+}
+
+.c-nav-menu-sp nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  inline-size: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c-nav-menu-sp nav ul li:not(:has(a)) {
+  inline-size: 1px;
+  block-size: 32px;
+  background-color: #ececec;
+}
+
+.c-nav-menu-sp nav ul li a {
+  position: relative;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  font-family: 'Zen Antique Soft', serif;
+  line-height: 1.2;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c-nav-menu-sp nav ul li a[target=_blank]:before {
+  font-size: 0;
+  letter-spacing: 0;
+  content: "新規タブで開きます";
+}
+
+.c-nav-menu-sp nav ul li a[target=_blank] span {
+  position: relative;
+}
+
+.c-nav-menu-sp nav ul li a[target=_blank] span:after {
+  display: inline-block;
+  inline-size: 12px;
+  block-size: 11px;
+  margin-inline-start: 1px;
+  content: "";
+  background: url(../images/css/icon-external-02.svg) 50%/contain no-repeat;
+  transform: translateY(1px);
+}
+
+.c-nav-menu-sp__menu {
+  min-inline-size: 92px;
+  font-size: 1.4rem;
+}
+
+.c-nav-menu-sp__menu:before {
+  display: block;
+  flex: 0 1 auto;
+  inline-size: 32px;
+  block-size: 26px;
+  content: "";
+  background: url(../images/css/icon-menu-03.svg) 50%/contain no-repeat;
+}
+
+.c-nav-menu-sp__marker {
+  min-inline-size: 92px;
+  font-size: 1.4rem;
+}
+
+.c-nav-menu-sp__marker:before {
+  display: block;
+  flex: 0 1 auto;
+  inline-size: 32px;
+  block-size: 26px;
+  content: "";
+  background: url(../images/css/icon-marker-02.svg) 50%/contain no-repeat;
+}
+
+.c-nav-menu-sp__order {
+  min-inline-size: 102px;
+  font-size: 1rem;
+}
+
+.c-nav-menu-sp__order:before {
+  display: block;
+  flex: 0 1 auto;
+  inline-size: 32px;
+  block-size: 20px;
+  content: "";
+  background: url(../images/css/icon-order-02.svg) 50%/contain no-repeat;
+}
+
+/* White Button Small */
+.c-button-white-small {
+  padding: 8px 4px 8px 16px;
+  color: #171e4e;
+  background-color: #fff;
+  border: 1px solid #171e4e;
+  --w: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: var(--w);
+  min-inline-size: 160px;
+  max-inline-size: 480px;
+  min-block-size: 44px;
+  font-family: 'Zen Antique Soft', serif;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .c-button-white-small {
+    inline-size: 100%;
+    max-inline-size: 311px;
+    margin-inline: auto;
+  }
+}
+
+.c-button-white-small > span {
+  display: flex;
+  flex: 1 1 0;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  padding-block-end: 2px;
+}
+
+.c-button-white-small[target=_blank]:before {
+  font-size: 0;
+  letter-spacing: 0;
+  content: "新規タブで開きます";
+}
+
+.c-button-white-small[target=_blank]:after {
+  background-image: url(../images/css/icon-external-02.svg);
+}
+
+@media (hover) {
+  .c-button-white-small {
+    transition: background-color .3s ease-out, color .3s ease-out, border-color .3s ease-out;
+  }
+  .c-button-white-small:hover {
+    color: #171e4e;
+    background-color: #d7dcec;
+    border-color: #171e4e;
+  }
+}
+
+.c-button-white-small:after {
+  display: block;
+  flex-shrink: 0;
+  inline-size: 24px;
+  block-size: 24px;
+  content: "";
+  background: url(../images/css/icon-arrow-right-01.svg) 50% no-repeat;
+}
+
+/* White Button Small with Mail Icon */
+.c-button-white-small-mail {
+  padding: 8px 4px 8px 16px;
+  color: #171e4e;
+  background-color: #fff;
+  border: 1px solid #171e4e;
+  --w: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: var(--w);
+  min-inline-size: 160px;
+  max-inline-size: 480px;
+  min-block-size: 44px;
+  font-family: 'Zen Antique Soft', serif;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 100px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .c-button-white-small-mail {
+    inline-size: 100%;
+    max-inline-size: 311px;
+    margin-inline: auto;
+  }
+}
+
+.c-button-white-small-mail > span {
+  display: flex;
+  flex: 1 1 0;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  padding-block-end: 2px;
+}
+
+.c-button-white-small-mail[target=_blank]:before {
+  font-size: 0;
+  letter-spacing: 0;
+  content: "新規タブで開きます";
+}
+
+.c-button-white-small-mail[target=_blank]:after {
+  background-image: url(../images/css/icon-external-02.svg);
+}
+
+@media (hover) {
+  .c-button-white-small-mail {
+    transition: background-color .3s ease-out, color .3s ease-out, border-color .3s ease-out;
+  }
+  .c-button-white-small-mail:hover {
+    color: #171e4e;
+    background-color: #d7dcec;
+    border-color: #171e4e;
+  }
+}
+
+.c-button-white-small-mail > span:before {
+  display: block;
+  flex-shrink: 0;
+  inline-size: 24px;
+  block-size: 24px;
+  content: "";
+  background: url(../images/css/icon-mail-01.svg) 50% no-repeat;
+}
+
+.c-button-white-small-mail:after {
+  display: block;
+  flex-shrink: 0;
+  inline-size: 24px;
+  block-size: 24px;
+  content: "";
+  background: url(../images/css/icon-arrow-right-01.svg) 50% no-repeat;
+}
+
+/* Page Sub Nav Sitemap wrapper (for positioning) */
+.c-page-sub__nav-sitemap {
+  position: relative;
+}
+
+.c-page-sub__footer {
+  position: relative;
+}

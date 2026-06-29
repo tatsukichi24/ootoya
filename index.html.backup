@@ -297,169 +297,82 @@
     </section>
   </main>
 
-  <div class="c-page-sub__nav-sitemap">
-    <button class="c-btn-pagetop-01" type="button">TOP</button>
-    <nav class="c-nav-sitemap" aria-label="ページ一覧">
-      <div class="c-nav-sitemap__body">
-        <div class="c-nav-sitemap__top">
-          <div class="c-nav-sitemap__top-inner">
-            <a class="c-nav-sitemap__logo" href="https://www.ootoya.com/">
-              <figure>
-                <picture><img
-                  src="assets/images/footer/logo-footer-ootoya.svg"
-                  decoding="async"
-                  alt="株式会社大戸屋ホールディングス"
-                  height="120"
-                  width="140"
-                /></picture>
-              </figure>
-            </a>
-            <a class="c-button-white-small-mail" href="https://www.ootoya.com/contact/">
-              <span>お問い合わせ</span>
-            </a>
-          </div>
-        </div>
-        <div class="c-nav-sitemap__menu">
-          <ul>
-            <li>
-              <a href="https://www.ootoya.com/"><span>トップ</span></a>
-            </li>
-            <li>
-              <a href="https://www.ootoya.com/news/"><span>新着情報</span></a>
-            </li>
-            <li>
-              <a href="https://www.ootoya.com/menu/"><span>メニュー</span></a>
-            </li>
-            <li>
-              <a href="https://www.ootoya.com/shokuiku/"><span>からだ想い定食</span></a>
-            </li>
-            <li>
-              <a href="https://store.ootoya.com/" target="_blank"><span>店舗検索</span></a>
-            </li>
-            <li>
-              <a href="https://www.ootoya.com/faq/"><span>よくあるご質問</span></a>
-            </li>
-            <li>
-              <a href="https://www.ootoya.com/about/"><span>あばうと大戸屋</span></a>
-            </li>
-            <li>
-              <a href="https://www.ootoya.com/menu_about/"><span>各種表示について</span></a>
-            </li>
-          </ul>
-        </div>
-        <div class="c-nav-sitemap__bottom">
-          <div class="c-nav-sitemap__bottom-inner">
-            <div class="c-nav-sitemap__bottom-button">
-              <a class="c-button-white-small" href="https://www.ootoya.jp/" target="_blank">
-                <span>会社情報</span>
-              </a>
-              <a class="c-button-white-small" href="https://www.ootoya.com/english/" target="_blank">
-                <span>English</span>
-              </a>
-            </div>
-            <div class="c-nav-sitemap__social">
-              <ul class="c-nav-sitemap__social-list">
-                <li>
-                  <a href="https://www.facebook.com/ootoya/" target="_blank">
-                    <figure>
-                      <picture><img
-                        src="assets/images/footer/icon-facebook-01.png"
-                        decoding="async"
-                        alt="Facebook"
-                        height="30"
-                        width="30"
-                      /></picture>
-                    </figure>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://x.com/ootoya_gohan" target="_blank">
-                    <figure>
-                      <picture><img
-                        src="assets/images/footer/icon-x-01.svg"
-                        decoding="async"
-                        alt="X"
-                        height="32"
-                        width="32"
-                      /></picture>
-                    </figure>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/ootoya.jp/" target="_blank">
-                    <figure>
-                      <picture><img
-                        src="assets/images/footer/icon-instagram-02.svg"
-                        decoding="async"
-                        alt="Instagram"
-                        height="30"
-                        width="31"
-                      /></picture>
-                    </figure>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/channel/UCRGnfRoJLXdrUL_0e1gbqAA" target="_blank">
-                    <figure>
-                      <picture><img
-                        src="assets/images/footer/icon-youtube-01.svg"
-                        decoding="async"
-                        alt="Youtube"
-                        height="22"
-                        width="31"
-                      /></picture>
-                    </figure>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <div class="c-page-sub__footer">
-    <footer class="c-footer">
-      <div class="c-footer__body">
-        <div class="c-footer__links">
-          <ul>
-            <li>
-              <a href="https://www.ootoya.com/fc/"><span>FC加盟店募集</span></a>
-            </li>
-            <li>
-              <a href="https://www.ootoya.com/fc/property/"><span>物件募集</span></a>
-            </li>
-            <li>
-              <a href="https://www.ootoya.com/privacy/"><span>プライバシーポリシー</span></a>
-            </li>
-            <li>
-              <a href="https://www.ootoya.com/socialmedia/"><span>ソーシャルメディアポリシー</span></a>
-            </li>
-          </ul>
-        </div>
-        <small class="c-footer__copyright">COPYRIGHT OOTOYA CO.,LTD All Rights Reserved.</small>
-      </div>
-    </footer>
-    <div class="c-nav-menu-sp">
-      <div class="c-nav-menu-sp__inner">
-        <nav>
-          <ul>
-            <li>
-              <a class="c-nav-menu-sp__menu" href="https://www.ootoya.com/menu/"><span>メニュー</span></a>
-            </li>
-            <li></li>
-            <li>
-              <a class="c-nav-menu-sp__marker" href="https://store.ootoya.com/" target="_blank"><span>店舗検索</span></a>
-            </li>
-            <li></li>
-            <li>
-              <a class="c-nav-menu-sp__order" href="https://net-order.ootoya.com/front/top" target="_blank"><span>テイクアウト<br>デリバリー</span></a>
-            </li>
-          </ul>
-        </nav>
+  <footer class="lp-footer" aria-label="フッター">
+    <div class="lp-footer__link-area">
+      <a class="lp-footer__pagetop" href="#top">
+        <img src="assets/images/footer/icon-arrow-pagetop.svg" width="21" height="13" alt="" aria-hidden="true">
+        <span>トップに戻る</span>
+      </a>
+
+      <div class="lp-footer__site-links">
+        <a class="lp-footer__site-card lp-footer__site-card--corporate" href="https://www.ootoya.jp/" target="_blank" rel="noopener">
+          <span class="lp-footer__site-mark" aria-hidden="true"></span>
+          <span class="lp-footer__site-text">
+            <span>大戸屋コーポレートサイト</span>
+            <small>会社情報</small>
+          </span>
+        </a>
+        <a class="lp-footer__site-card lp-footer__site-card--official" href="https://www.ootoya.com/" target="_blank" rel="noopener">
+          <img src="assets/images/footer/new_tagline_logo.png" width="140" height="120" alt="" aria-hidden="true">
+          <span>大戸屋公式サイト</span>
+        </a>
       </div>
     </div>
-  </div>
+
+    <div class="lp-footer__sitemap">
+      <div class="lp-footer__sitemap-inner">
+        <div class="lp-footer__brand-card">
+          <img src="assets/images/footer/logo-footer-ootoya.svg" width="140" height="120" alt="大戸屋">
+          <a href="https://www.ootoya.com/contact/" target="_blank" rel="noopener">ご意見・お問い合わせ</a>
+        </div>
+
+        <nav class="lp-footer__nav" aria-label="大戸屋サイト内リンク">
+          <ul>
+            <li><a href="https://www.ootoya.com/" target="_blank" rel="noopener"><span>トップ</span></a></li>
+            <li><a href="https://www.ootoya.com/menu/" target="_blank" rel="noopener"><span>メニュー</span></a></li>
+            <li><a href="https://store.ootoya.com/" target="_blank" rel="noopener"><span>店舗検索</span></a></li>
+            <li><a href="https://www.ootoya.com/about/" target="_blank" rel="noopener"><span>あばうと大戸屋</span></a></li>
+            <li><a href="https://www.ootoya.com/news/" target="_blank" rel="noopener"><span>新着情報</span></a></li>
+            <li><a href="https://www.ootoya.com/shokuiku/" target="_blank" rel="noopener"><span>からだ想い定食</span></a></li>
+            <li><a href="https://www.ootoya.com/faq/" target="_blank" rel="noopener"><span>よくあるご質問</span></a></li>
+            <li><a href="https://www.ootoya.com/fc/" target="_blank" rel="noopener"><span>FC加盟店募集</span></a></li>
+            <li><a href="https://www.ootoya.com/fc/property/" target="_blank" rel="noopener"><span>物件募集</span></a></li>
+            <li><a href="https://www.ootoya.com/privacy/" target="_blank" rel="noopener"><span>プライバシーポリシー</span></a></li>
+            <li><a href="https://www.ootoya.com/socialmedia/" target="_blank" rel="noopener"><span>ソーシャルメディアポリシー</span></a></li>
+          </ul>
+        </nav>
+
+        <ul class="lp-footer__social">
+          <li>
+            <a href="https://www.facebook.com/ootoya/" target="_blank" rel="noopener">
+              <img src="assets/images/footer/icon-facebook-01.png" width="30" height="30" alt="">
+              <span>大戸屋公式<br>Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/ootoya_gohan" target="_blank" rel="noopener">
+              <img src="assets/images/footer/icon-x-01.svg" width="32" height="32" alt="">
+              <span>大戸屋公式<br>twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/ootoya.jp/" target="_blank" rel="noopener">
+              <img src="assets/images/footer/icon-instagram-02.svg" width="31" height="30" alt="">
+              <span>大戸屋公式<br>instagram</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCRGnfRoJLXdrUL_0e1gbqAA" target="_blank" rel="noopener">
+              <img src="assets/images/footer/icon-youtube-01.svg" width="31" height="22" alt="">
+              <span>大戸屋公式<br>youtube</span>
+            </a>
+          </li>
+        </ul>
+
+        <small class="lp-footer__copyright">COPYRIGHT OOTOYA CO.,LTD All Rights Reserved.</small>
+      </div>
+    </div>
+  </footer>
 
   <script src="assets/js/main.js" defer></script>
 </body>

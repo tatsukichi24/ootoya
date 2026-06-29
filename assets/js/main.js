@@ -221,3 +221,36 @@
     }
   });
 })();
+
+// Page Top Button
+(function () {
+  var pageTopBtn = document.querySelector(".c-btn-pagetop-01");
+
+  if (!pageTopBtn) {
+    return;
+  }
+
+  pageTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+
+  // Show/hide based on scroll position
+  function toggleVisibility() {
+    if (window.scrollY > 300) {
+      pageTopBtn.style.opacity = "1";
+      pageTopBtn.style.pointerEvents = "auto";
+    } else {
+      pageTopBtn.style.opacity = "0";
+      pageTopBtn.style.pointerEvents = "none";
+    }
+  }
+
+  // Initial state
+  pageTopBtn.style.opacity = "0";
+  pageTopBtn.style.pointerEvents = "none";
+
+  window.addEventListener("scroll", toggleVisibility);
+})();
