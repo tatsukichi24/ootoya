@@ -2461,8 +2461,8 @@ main {
 
 @media screen and (max-width: 991px) {
   .c-nav-sitemap__logo {
-    inline-size: auto;
-    block-size: 130px;
+    inline-size: 120px;
+    block-size: 101px;
   }
 }
 
@@ -2655,7 +2655,7 @@ main {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  margin: 16px 0 0;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -3097,4 +3097,11 @@ main {
 
 .c-page-sub__footer {
   position: relative;
+}
+
+/* 共通フッター・サイトマップ部分は本体サイト準拠のフォント・カラーに戻す */
+.c-page-sub__nav-sitemap,
+.c-page-sub__footer {
+  font-family: "Noto Sans JP", "メイリオ", Meiryo, sans-serif;
+  color: #161616;
 }

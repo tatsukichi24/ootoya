@@ -225,6 +225,7 @@
 // Page Top Button
 (function () {
   var pageTopBtn = document.querySelector(".c-btn-pagetop-01");
+  var footer = document.querySelector(".c-page-sub__nav-sitemap");
 
   if (!pageTopBtn) {
     return;
@@ -237,14 +238,26 @@
     });
   });
 
-  // Show/hide based on scroll position
+  // Show/hide based on scroll position and stop at footer
   function toggleVisibility() {
-    if (window.scrollY > 300) {
+    var scrollTop = window.scrollY || 0;
+    var windowHeight = window.innerHeight || 0;
+    var viewportBottom = scrollTop + windowHeight;
+
+    // Show/hide based on scroll position
+    if (scrollTop > 300) {
       pageTopBtn.style.opacity = "1";
       pageTopBtn.style.pointerEvents = "auto";
     } else {
       pageTopBtn.style.opacity = "0";
       pageTopBtn.style.pointerEvents = "none";
+    }
+
+    // Stop at footer
+    if (footer) {
+      var footerTop = footer.offsetTop;
+      var isStop = viewportBottom >= footerTop;
+      pageTopBtn.setAttribute("data-is-stop", isStop.toString());
     }
   }
 
@@ -252,5 +265,7 @@
   pageTopBtn.style.opacity = "0";
   pageTopBtn.style.pointerEvents = "none";
 
-  window.addEventListener("scroll", toggleVisibility);
+  window.addEventListener("scroll", function () {
+    requestAnimationFrame(toggleVisibility);
+  });
 })();
