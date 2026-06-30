@@ -46,6 +46,11 @@ img {
   height: auto;
 }
 
+figure {
+  margin: 0;
+  line-height: 0;
+}
+
 a {
   color: inherit;
 }
@@ -161,7 +166,7 @@ a {
 .mv__bg-image--left-bottom {
   --mv-bg-width: min(42vw, 33rem);
   --mv-bg-delay: .34s;
-  bottom: 0rem;
+  bottom: 0;
   left: 0;
 }
 
@@ -176,7 +181,7 @@ a {
   --mv-bg-width: min(44vw, 35rem);
   --mv-bg-delay: .5s;
   right: 0;
-  bottom: 0rem;
+  bottom: 0;
 }
 
 @media not all and (min-width: 768px){
@@ -493,7 +498,6 @@ a {
 }
 
 .mv__food--j {
-  --food-width: 0;
   --food-delay: 3.53s;
   --food-rotate: 0deg;
   display: none;
@@ -802,7 +806,7 @@ a {
 .content-section__title {
   margin: 0 0 1rem;
   color: #5b4d55;
-  font-family: "Zen Antique", serif;
+  font-family: "Zen Antique Soft", serif;
   font-size: 2rem;
   line-height: 1;
   font-weight: 800;
@@ -853,7 +857,7 @@ a {
 @media not all and (min-width: 1024px){
   .content-section__visual--thanks {
     margin-inline: auto;
-    width: min(100%, 28rem)!important;
+    width: min(100%, 28rem);
   }
 }
 
@@ -882,7 +886,7 @@ a {
 
 .content-section__decor--smile-02 {
   width: 10rem;
-  top: 0rem;
+  top: 0;
   left: 6rem;
   right: auto;
   bottom: auto;
@@ -1662,7 +1666,7 @@ a {
 }
 
 .shop-card__name {
-  margin: 0rem 0 0rem;
+  margin: 0;
   color: #221714;
   font-family: var(--font-sans);
   font-size: 20px;
@@ -2466,9 +2470,14 @@ main {
   }
 }
 
+.c-nav-sitemap__logo figure,
+.c-nav-sitemap__logo picture {
+  block-size: 100%;
+}
+
 .c-nav-sitemap__logo img {
-  inline-size: 100%;
-  block-size: auto;
+  inline-size: auto;
+  block-size: 100%;
 }
 
 .c-nav-sitemap__menu {
